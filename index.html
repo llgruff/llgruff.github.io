@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width">
-<title>llgruff | Someone's obsessions</title>
-<meta name="description" content="Персональный блог llgruff | Someone's obsessions. Do not judge stricktly."/>
-<link rel="Shortcut Icon" type="image/x-icon" href="../favicon.png" />
-<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
-<style type="text/css">
-body{padding:0;background:#f1f1f1;font-family:'Open Sans',sans-serif;background-image:url("http://llgruff.ru/main/themes/llgruff/img/bg_home.png");background-attachment:fixed}
-.clearfix:before, .clearfix:after { content: ""; display: table; line-height: 0; }
-.clearfix:after { clear: both; }
-.primary-bg,.element.primary-bg,a.element:hover,.element-portfolio:hover .portfolio-title,.progress .bar,.navbar .btn-navbar,.btn-primary,ul.social li a,.nav-collapse .nav>li>a:hover,.nav-collapse .nav>li>a:focus,.nav-collapse .dropdown-menu a:hover,.nav-collapse .dropdown-menu a:focus,.navbar .nav>li>a.selected{background-image:none;background-color:#2ba7e1}
-.primary-color,.element h2.title,.element h3.title,.element h4.title,.element h5.title,a,a:focus,a:visited{color:#2ba7e1}
-.element h2.title,.element h3.title,.element h4.title,.element h5.title{border-bottom:1px dashed #2ba7e1}
-#container-isotope{max-width:500px;display:block;margin-left:auto;margin-right:auto;padding:0;margin-top:40px}
-h1.main-name,.element h1.main-name{font-size:50px;line-height:60px;margin-top:17px;margin-bottom:25px;font-weight:400;text-shadow:2px 2px rgba(0,0,0,0.2),6px 6px rgba(0,0,0,0.2)}
-p{margin-top:0;padding-top:0;margin-bottom:10px}
-hr{border:none;border-bottom: 1px dashed #999;margin-top:20px;margin-bottom:20px}
-table.table{margin-top:-10px;width: 100%;}
-
-table.table th,table.table td{border:none;padding:8px;padding-top:10px;padding-bottom:10px;line-height:20px;text-align:left;vertical-align:top;}
-table.table th{padding-left:0}
-table.table th,.dark{color:#333!important}
-.element,.variable-sizes .element.width2.height2{font-family:Arial,serif;font-size:14px;line-height:22px;font-weight:400;color:#555}
-.element{width:240px;height:240px;margin:5px;border-radius:0;background-color:#fff;padding:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;box-shadow:0 2px 7px rgba(0,0,0,0.42);-moz-shadow:0 2px 7px rgba(0,0,0,0.42);-webkit-box-shadow:0 2px 7px rgba(0,0,0,0.42);-o-shadow:0 2px 7px rgba(0,0,0,0.42);float:left;overflow:hidden;position:relative;}
-.variable-sizes .element.height2{height:490px}
-.element.primary-bg{color:#fff;border:none}
-.element.primary-bg h1,.element.primary-bg h2,.element.primary-bg h3,.element.primary-bg h4,.element.primary-bg h5,.element.primary-bg h6{color:#fff}
-.element h1,.element h2,.element h3,.element h4,.element h5,.element h6{font-weight:700;color:#333;padding-top:0;margin-top:0;font-family:'Open Sans',sans-serif}
-small{color:#aaa;font-size:12px;font-weight:400;font-family:'Open Sans',sans-serif;text-transform:none}
-.element h1.title,.element h2.title,.element h3.title,.element h4.title,.element h5.title,.element h6.title{margin-bottom:22px}
-.element h2.title,.element h3.title,.element h4.title,.element h5.title{padding-bottom:12px;font-weight:400}
-.element h2.title{font-size:34px;line-height:34px}
-h1.big-text,p.big-text{font-size:36px;line-height:54px;margin-top:-6px}
-.text-cursive{font-family:'Reenie Beanie',cursive!important}
-.text-no-transform{text-transform:none!important}
-
-.fb,.inst,.vk,.at,.lock{max-width:16px;max-height:16px;background-repeat:no-repeat}
-.fb:hover,.inst:hover,.vk:hover,.lock:hover{cursor:pointer;}
-.fb span,.vk span{margin-right:5px}
-.fb{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5ElEQVQ4T2NUWH9fgOsHUz8jA0MCAwngPwPDgm8c/woZtZc/XMDAwBBPgl5kpQtBBvwnTvP/jwz/GS6A1TIyGDAwMPKDmcQZwJh4NVIO5FIw0F724AADI6M9UQb8Z2BovBYp34DsSpIM+MvApngjUvKB9tInBv+Z/vpDDPqfwMjAqECUC65GyjOCFGotf9jAyMBQjx5eOMPgLwOTI0jxjUjZAyBaY/lzBQaGP2BbmRn+TmBgYNTH6wKYzdhiiKgwoNgAmM1kh8HQMgBvZiIQBgsZQdmZ+wfTBFw5Eo8BC79y/CsAAKcteYsB1PzHAAAAAElFTkSuQmCC)}
-.inst{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABY0lEQVQ4T52TMU7DQBREZ2yJNqGkAJsusgvMCQgnAEq7CjfIDeAGwAmAgmybGxBOkFA4pFwDEq1TUtgfrR1HibRIBpfWzNv9M/vZUx99B8U9QR9/+ASiS7iXDEZak/TaeEUkI6BBdAEeGQhDlUkbs9GkscdGGyo9M5D/A0Z6AvKkBUCWADvm5AI7h4t4T/fUl+/K9xRk9xeALAu454t4f2KMJmgXxbgBbY68AsgSghmIyIgKOKeNeT3z02cEp5gC29oaIPKSJn4/VDoXQT5PfGulVWNAJ0383XArgzWgguVGYGumqdy0YQUEKhsTOLONUOdQPgPymsZ+ZAWsRSI5wGGaeI/mJqF6H0DKG5N6Kbx4Sw7GVoARByq7JnBlG0EEd/PEG1ZQWwaNqd6PckhI3/wTcFLCud1sZgsgIrN54h+3fdL1WKun3CRrICTyNhARdElG1XJV15Xioe1GNgcYc0l38AM8sOxtT3P56gAAAABJRU5ErkJggg==)}
-.vk{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABM0lEQVQ4T81TO1LCUBQ9J8z4GZu0FvLpRAq3IDsgZWhwCdmBcQWyBG1ISXZg3AEWCB1BN5CG0SY5zgsJCI4W0PBm3rx5d+4999xz3mMriEcAr7HDkjRiK5hrh9pVyaEASC8iI8OLkAdBKStOfpdsixrmnDfzOka7YgRFY7feNjlXwdwncCfg/s2t+SZW6pTiqDF1z+Mi9gigt9IghdWeuhdRfTizz74YC+xvATyN3dqtKb4MPm4qyJ5zhmsX1iyag/cOoPqkW+uX3RYnmRc7jSRv8MkZSHsLAMhEZ9Kthv/Z2hzMPYt4KHM2bZSSxakaptNfIMsRLcOs94vBUmiNMh47pViFsCHBcOxWjXAodIp+uLDVT0pEhjB7aWV+CvAzWbndFlKPZOdQXuIev4n7fGdAr9/RN6vOJcf1HwAAAABJRU5ErkJggg==)}						
-.at{margin: 0 2px;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABzUlEQVQ4T5VTy3HbMBR8y89ZcgVRKrBcQeQKzIyAc6wO5AoiV2CnAstnQBO4AqsDMxU4qcDJGRy+zHIADicjH4IbAb59+3b3QU6c9XrdFEVxJSIrEVmkX1pVDV3XfQsh/M5lmNZba5eqeiciH0XkXkRa7/2xaZpFWZbLoii2qnquqpvD4RBYOwKk4mcAj8657SlmvLPWXovIg4hcOOfaAaBpmnld1y+q+ui93/3LSkRmMcZfIYSffDPGsPvMe385ABhjWHTtvc/z5k5fJxqIqj557xuOVNf1K1kMANZairJ1zu0T4B7AF1W96bousLO1thWRYx7PGEM2exhjVgCeY4xnVDc58F1ENhkwNVECeu8pLpseVfVIgB2Axjm3TA/sJPk73fGNGl3SlcRyZECAlXOOnhOZnW6nYhpjtgDunHNT0d/6vv+cGbwLQIeqqnoFMM8Aycr7GOMC2dfJI0eYqeqQBQA7Vf1BUalTWZbU7AHADTVCysBbFi0FKgD4ICJ/sjvJhfPp3ZhEYwxt+xRjvJjm/L00Tu9HUaqqagG8xBg3/wMy7kJKV1BVUicjxpUjUI85re77/ikv0cltzMuiqg0ArjMPQfIqD6mcjvAXy6IcDA6g2jkAAAAASUVORK5CYII=');}
-.lock{background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA70lEQVQ4T52S0VECQRBEX0egZoAZmAGGgBGAESAREIIQARqBZqBGYApkABk0NVd3yzHeWVvM19XO3NvunhUDZfsBWAOPwC3wCWwlfedx5QPbC2A3BAaeJb31excA2xPgt711JWkTw7ZfgNf2x3tJ+w6SAd3gu6RQUsp23DwHCjiaGdANPUkK333ADPgALuAZEKGFioWkYwJE7wv4kRTfTf0JcSS8yOF/gO0IbDkGSOex0lB6VmA7djytBBQbxcIIYNsCs7IqQBkagFcBjpLu2ocUG7np2asCIKmxaNspmzoA0CgADtcCxpYyqOCqd3ACIZB1ESgc8LQAAAAASUVORK5CYII='); }
-@media only screen and (max-width: 749px) { #container-isotope{ max-width: 500px; } }
-@media only screen and (max-width: 499px) { #container-isotope{ max-width: 250px; } }
-</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<title>llgruff | Someone's obsessions</title>
+	<meta name="description" content="Персональный блог llgruff | Someone's obsessions. Do not judge stricktly."/>
+	<link rel="Shortcut Icon" type="image/x-icon" href="../favicon.png" />
+	<link rel="stylesheet" href="//necolas.github.io/normalize.css/3.0.3/normalize.css">
+	<style type="text/css">
+		body{padding:0;background:#f1f1f1;font-family:'Open Sans',Arial,sans-serif;background-image:url("../bg.png");background-attachment:fixed}
+		.clearfix:before, .clearfix:after { content: ""; display: table; line-height: 0; }
+		.clearfix:after { clear: both; }
+		.primary-bg,.element.primary-bg,a.element:hover,.element-portfolio:hover .portfolio-title,.progress .bar,.navbar .btn-navbar,.btn-primary,ul.social li a,.nav-collapse .nav>li>a:hover,.nav-collapse .nav>li>a:focus,.nav-collapse .dropdown-menu a:hover,.nav-collapse .dropdown-menu a:focus,.navbar .nav>li>a.selected{background-image:none;background-color:#2ba7e1}
+		.primary-color,.element h2.title,.element h3.title,.element h4.title,.element h5.title,a,a:focus,a:visited{color:#2ba7e1}
+		.element h2.title,.element h3.title,.element h4.title,.element h5.title{border-bottom:1px dashed #2ba7e1}
+		#container-isotope{max-width:500px;display:block;margin-left:auto;margin-right:auto;padding:0;margin-top:40px}
+		h1.main-name,.element h1.main-name{font-size:50px;line-height:60px;margin-top:17px;margin-bottom:25px;font-weight:400;text-shadow:2px 2px rgba(0,0,0,0.2),6px 6px rgba(0,0,0,0.2)}
+		p{margin-top:0;padding-top:0;margin-bottom:10px}
+		hr{border:none;border-bottom: 1px dashed #999;margin-top:20px;margin-bottom:20px}
+		table.table{margin-top:-10px;width: 100%;}
+		
+		table.table th,table.table td{border:none;padding:8px;padding-top:10px;padding-bottom:10px;line-height:20px;text-align:left;vertical-align:top;}
+		table.table th{padding-left:0}
+		table.table th,.dark{color:#333!important}
+		.element,.variable-sizes .element.width2.height2{font-family:Arial,serif;font-size:14px;line-height:22px;font-weight:400;color:#555}
+		.element{width:240px;height:240px;margin:5px;border-radius:0;background-color:#fff;padding:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;box-shadow:0 2px 7px rgba(0,0,0,0.42);-moz-shadow:0 2px 7px rgba(0,0,0,0.42);-webkit-box-shadow:0 2px 7px rgba(0,0,0,0.42);-o-shadow:0 2px 7px rgba(0,0,0,0.42);float:left;overflow:hidden;position:relative;}
+		.variable-sizes .element.height2{height:490px}
+		.element.primary-bg{color:#fff;border:none}
+		.element.primary-bg h1,.element.primary-bg h2,.element.primary-bg h3,.element.primary-bg h4,.element.primary-bg h5,.element.primary-bg h6{color:#fff}
+		.element h1,.element h2,.element h3,.element h4,.element h5,.element h6{font-weight:700;color:#333;padding-top:0;margin-top:0;font-family:'Open Sans',sans-serif}
+		small{color:#aaa;font-size:12px;font-weight:400;font-family:'Open Sans',sans-serif;text-transform:none}
+		.element h1.title,.element h2.title,.element h3.title,.element h4.title,.element h5.title,.element h6.title{margin-bottom:22px}
+		.element h2.title,.element h3.title,.element h4.title,.element h5.title{padding-bottom:12px;font-weight:400}
+		.element h2.title{font-size:34px;line-height:34px}
+		h1.big-text,p.big-text{font-size:36px;line-height:54px;margin-top:-6px}
+		.text-cursive{font-family:'Reenie Beanie',cursive!important}
+		.text-no-transform{text-transform:none!important}
+		
+		.fb,.inst,.vk,.at,.lock{max-width:16px;max-height:16px;background-repeat:no-repeat}
+		.fb:hover,.inst:hover,.vk:hover,.lock:hover{cursor:pointer;}
+		.fb span,.vk span{margin-right:5px}
+		.fb{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5ElEQVQ4T2NUWH9fgOsHUz8jA0MCAwngPwPDgm8c/woZtZc/XMDAwBBPgl5kpQtBBvwnTvP/jwz/GS6A1TIyGDAwMPKDmcQZwJh4NVIO5FIw0F724AADI6M9UQb8Z2BovBYp34DsSpIM+MvApngjUvKB9tInBv+Z/vpDDPqfwMjAqECUC65GyjOCFGotf9jAyMBQjx5eOMPgLwOTI0jxjUjZAyBaY/lzBQaGP2BbmRn+TmBgYNTH6wKYzdhiiKgwoNgAmM1kh8HQMgBvZiIQBgsZQdmZ+wfTBFw5Eo8BC79y/CsAAKcteYsB1PzHAAAAAElFTkSuQmCC)}
+		.inst{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABY0lEQVQ4T52TMU7DQBREZ2yJNqGkAJsusgvMCQgnAEq7CjfIDeAGwAmAgmybGxBOkFA4pFwDEq1TUtgfrR1HibRIBpfWzNv9M/vZUx99B8U9QR9/+ASiS7iXDEZak/TaeEUkI6BBdAEeGQhDlUkbs9GkscdGGyo9M5D/A0Z6AvKkBUCWADvm5AI7h4t4T/fUl+/K9xRk9xeALAu454t4f2KMJmgXxbgBbY68AsgSghmIyIgKOKeNeT3z02cEp5gC29oaIPKSJn4/VDoXQT5PfGulVWNAJ0383XArgzWgguVGYGumqdy0YQUEKhsTOLONUOdQPgPymsZ+ZAWsRSI5wGGaeI/mJqF6H0DKG5N6Kbx4Sw7GVoARByq7JnBlG0EEd/PEG1ZQWwaNqd6PckhI3/wTcFLCud1sZgsgIrN54h+3fdL1WKun3CRrICTyNhARdElG1XJV15Xioe1GNgcYc0l38AM8sOxtT3P56gAAAABJRU5ErkJggg==)}
+		.vk{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABM0lEQVQ4T81TO1LCUBQ9J8z4GZu0FvLpRAq3IDsgZWhwCdmBcQWyBG1ISXZg3AEWCB1BN5CG0SY5zgsJCI4W0PBm3rx5d+4999xz3mMriEcAr7HDkjRiK5hrh9pVyaEASC8iI8OLkAdBKStOfpdsixrmnDfzOka7YgRFY7feNjlXwdwncCfg/s2t+SZW6pTiqDF1z+Mi9gigt9IghdWeuhdRfTizz74YC+xvATyN3dqtKb4MPm4qyJ5zhmsX1iyag/cOoPqkW+uX3RYnmRc7jSRv8MkZSHsLAMhEZ9Kthv/Z2hzMPYt4KHM2bZSSxakaptNfIMsRLcOs94vBUmiNMh47pViFsCHBcOxWjXAodIp+uLDVT0pEhjB7aWV+CvAzWbndFlKPZOdQXuIev4n7fGdAr9/RN6vOJcf1HwAAAABJRU5ErkJggg==)}						
+		.at{margin: 0 2px;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABzUlEQVQ4T5VTy3HbMBR8y89ZcgVRKrBcQeQKzIyAc6wO5AoiV2CnAstnQBO4AqsDMxU4qcDJGRy+zHIADicjH4IbAb59+3b3QU6c9XrdFEVxJSIrEVmkX1pVDV3XfQsh/M5lmNZba5eqeiciH0XkXkRa7/2xaZpFWZbLoii2qnquqpvD4RBYOwKk4mcAj8657SlmvLPWXovIg4hcOOfaAaBpmnld1y+q+ui93/3LSkRmMcZfIYSffDPGsPvMe385ABhjWHTtvc/z5k5fJxqIqj557xuOVNf1K1kMANZairJ1zu0T4B7AF1W96bousLO1thWRYx7PGEM2exhjVgCeY4xnVDc58F1ENhkwNVECeu8pLpseVfVIgB2Axjm3TA/sJPk73fGNGl3SlcRyZECAlXOOnhOZnW6nYhpjtgDunHNT0d/6vv+cGbwLQIeqqnoFMM8Aycr7GOMC2dfJI0eYqeqQBQA7Vf1BUalTWZbU7AHADTVCysBbFi0FKgD4ICJ/sjvJhfPp3ZhEYwxt+xRjvJjm/L00Tu9HUaqqagG8xBg3/wMy7kJKV1BVUicjxpUjUI85re77/ikv0cltzMuiqg0ArjMPQfIqD6mcjvAXy6IcDA6g2jkAAAAASUVORK5CYII=');}
+		.lock{background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA70lEQVQ4T52S0VECQRBEX0egZoAZmAGGgBGAESAREIIQARqBZqBGYApkABk0NVd3yzHeWVvM19XO3NvunhUDZfsBWAOPwC3wCWwlfedx5QPbC2A3BAaeJb31excA2xPgt711JWkTw7ZfgNf2x3tJ+w6SAd3gu6RQUsp23DwHCjiaGdANPUkK333ADPgALuAZEKGFioWkYwJE7wv4kRTfTf0JcSS8yOF/gO0IbDkGSOex0lB6VmA7djytBBQbxcIIYNsCs7IqQBkagFcBjpLu2ocUG7np2asCIKmxaNspmzoA0CgADtcCxpYyqOCqd3ACIZB1ESgc8LQAAAAASUVORK5CYII='); }
+		@media only screen and (max-width: 749px) { #container-isotope{ max-width: 500px; } }
+		@media only screen and (max-width: 499px) { #container-isotope{ max-width: 250px; } }
+	</style>
 </head>
 
 <body>
@@ -77,9 +77,9 @@ h1.big-text,p.big-text{font-size:36px;line-height:54px;margin-top:-6px}
 				<tr>
 					<th>Networks:</th>
 					<td>
-						<span onClick="hidden_link('https://vk.com/llgruff'); return false;" class="vk"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-						<span onClick="hidden_link('https://www.facebook.com/roman.gruff'); return false;" class="fb"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-						<span onClick="hidden_link('https://www.instagram.com/llgruf/'); return false;" class="inst"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+						<span onClick="hidden_link('//vk.com/llgruff'); return false;" class="vk"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+						<span onClick="hidden_link('//www.facebook.com/roman.gruff'); return false;" class="fb"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+						<span onClick="hidden_link('//www.instagram.com/llgruf/'); return false;" class="inst"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
 					</td>
 				</tr>				
 			</table>
@@ -90,8 +90,8 @@ h1.big-text,p.big-text{font-size:36px;line-height:54px;margin-top:-6px}
 	    </div>
  	</div><!-- #container -->
 
-<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<script type="text/javascript">	function hidden_link(data) { window.open( data ); } </script>
+	<link href='//fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">	function hidden_link(data) { window.open( data ); } </script>
 </body>
 </html>
